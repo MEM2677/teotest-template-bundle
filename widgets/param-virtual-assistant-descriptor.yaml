@@ -7,8 +7,16 @@ titles:
 group: free
 customUi: |-
   <#assign wp=JspTaglibs["/aps-core"]>
-  <h1>TEST #1</h1>
-  <script nonce="<@wp.cspNonce />" type='text/javascript' src='https://sdkathlos.it/avatar/freedemo/js_wordpress/sdk_main.js'></script>  <script nonce="<@wp.cspNonce />">
+  
+  <#assign urlVar><@wp.currentWidget param="config" configParam="url" /></#assign>
+  <#if urlVar?? && urlVar?has_content>
+  <!-- Using configured URL  -->
+  <#else>
+  <#assign urlVar>https://sdkathlos.it/avatar/freedemo/js_wordpress/sdk_main.js</#assign>
+  <!--Using default URL  -->
+  </#if>
+  
+  <script nonce="<@wp.cspNonce />" type='text/javascript' src='${urlVar}'></script>  <script nonce="<@wp.cspNonce />">
   var isMobile = false; //initiate as false
   // device detection
   if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)

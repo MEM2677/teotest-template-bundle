@@ -3,11 +3,11 @@ name: param-va
 type: widget
 titles:
   en: Virtual Assistant
-  it: Configurazione Assistente
+  it: Assistente Virtuale
 group: free
 customUi: |-
   <#assign wp=JspTaglibs["/aps-core"]>
-  
+  <h1>TEST #1</h1>
   <script nonce="<@wp.cspNonce />" type='text/javascript' src='https://sdkathlos.it/avatar/freedemo/js_wordpress/sdk_main.js'></script>  <script nonce="<@wp.cspNonce />">
   var isMobile = false; //initiate as false
   // device detection
@@ -40,8 +40,6 @@ customUi: |-
   
 
 params:
-  - name: navSpec
-    description: Rules for the Page List auto-generation
-  - name: title
-    description: Description of title parameter
-configMfe: "global:navigatorConfig"
+  - name: url
+    description: Assistant address
+configMfe: "global:configSimpleParameter"

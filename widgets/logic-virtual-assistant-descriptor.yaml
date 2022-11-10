@@ -1,5 +1,5 @@
 descriptorVersion: v5
-name: logic-menu
+name: menu-va
 type: widget
 titles:
   en: Virtual Assistant Menu
@@ -7,4 +7,4 @@ titles:
 group: free
 parentName: param-va
 paramsDefaults:
-  navSpec: code(homepage)
+  url: http://www.ansa.it

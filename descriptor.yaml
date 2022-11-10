@@ -5,5 +5,4 @@ components:
   widgets:
     - widgets/param-virtual-assistant-descriptor.yaml.yaml
     - widgets/logic-virtual-assistant-descriptor.yaml.yaml
-  pages:
-    - pages/test-descriptor.yaml
+

@@ -1,0 +1,19 @@
+descriptorVersion: v5
+name: param-menu
+type: widget
+titles:
+  en: Parametrized menu
+  it: Menu Parametrico
+group: free
+customUi: |-
+    <#assign wp=JspTaglibs["/aps-core"]>
+
+    <h2>PAGE <@wp.currentPage param="code" /></h2>
+    <h2>Widget <@wp.currentWidget param="code" /></h2>
+    <p>param navSpec <@wp.currentWidget param="config" configParam="navSpec" /> - param title <@wp.currentWidget param="config" configParam="title" /></p>
+params:
+  - name: navSpec
+    description: Rules for the Page List auto-generation
+  - name: title
+    description: Description of title parameter
+configMfe: "global:navigatorConfig"

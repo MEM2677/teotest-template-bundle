@@ -1,0 +1,10 @@
+descriptorVersion: v5
+name: logic-menu
+type: widget
+titles:
+  en: Logic menu
+  it: Menu logico
+group: free
+parentName: param-menu
+paramsDefaults:
+  navSpec: code(homepage)

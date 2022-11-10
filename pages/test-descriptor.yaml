@@ -1,0 +1,21 @@
+descriptorVersion: v5
+name: test_bundle
+parentName: global:my_homepage
+titles:
+  en: Test bundle
+  it: Test bundle
+pageModel: 1-column
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - name: param-menu
+    config:
+      navSpec: code(homepage) + code(my_homepage)
+    pos: 4
+  - name: logic-menu
+    config: null
+    pos: 5

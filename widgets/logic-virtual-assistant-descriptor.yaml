@@ -1,0 +1,10 @@
+descriptorVersion: v5
+name: logic-menu
+type: widget
+titles:
+  en: Virtual Assistant Menu
+  it: Menu Assistente Virtuale
+group: free
+parentName: param-va
+paramsDefaults:
+  navSpec: code(homepage)

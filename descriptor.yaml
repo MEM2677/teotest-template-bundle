@@ -1,8 +1,8 @@
-code: test-assistente-virtuale-widget
-description: Test Assistente Virtuale
+code: assistente-virtuale-widget
+description: Assistente Virtuale Athlos
 bundle-type: system-level-bundle
 components:
   widgets:
     - widgets/param-virtual-assistant-descriptor.yaml
-    - widgets/logic-virtual-assistant-descriptor.yaml
+#   - widgets/logic-virtual-assistant-descriptor.yaml
 

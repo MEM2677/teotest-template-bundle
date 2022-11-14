@@ -8,11 +8,11 @@ group: free
 customUi: |-
   <#assign wp=JspTaglibs["/aps-core"]>
   
-  <#assign urlVar><@wp.currentWidget param="config" configParam="url" /></#assign>
+  <#assign urlVar><@wp.currentWidget param="config" configParam="key" /></#assign>
   <#if urlVar?? && urlVar?has_content>
   <!-- Using configured URL  -->
   <#else>
-  <#assign urlVar>https://sdkathlos.it/avatar/freedemo/js_wordpress/sdk_main.js</#assign>
+  <#assign urlVar>aHR0cHM6Ly9zZGthdGhsb3MuaXQvYXZhdGFyL2ZyZWVkZW1vL2pzX3dvcmRwcmVzcy9zZGtfbWFpbi5qcw==</#assign>
   <!--Using default URL  -->
   </#if>
   

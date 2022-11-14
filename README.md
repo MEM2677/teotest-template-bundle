@@ -23,10 +23,10 @@ It's possible to save the form leaving the key blank, in this case the default a
  ``ent k get deploy``
 
  - Scale the deploy to zero  
- ``ent k scale deploy teo-deployment --replicas=0``
+ ``ent k scale deploy xxyyzz-deployment --replicas=0`` where xyz is the name of the Entando application
 
  - edit the deployment
- ``ent k edit deploy xyz-deployment`` where xyz is the name of the Entando application 
+ ``ent k edit deploy xxyyzz-deployment``  
 
 - add the snipped below in the bottom of the list of the environment variables found in the deployment
 
@@ -44,3 +44,5 @@ It's possible to save the form leaving the key blank, in this case the default a
    ```
   
    This is needed because Entando does not know in advance all the JS scripts remotely leaded from the Athlos main server.
+ - Restart the deploy  
+ ``ent k scale deploy xxyyzz-deployment --replicas=1``

@@ -70,6 +70,6 @@ customUi: |-
   
 
 params:
-  - name: url
+  - name: key
     description: Assistant Key
 configMfe: "global:configSimpleParameter"

@@ -1,7 +1,8 @@
-code: ad
-parentCode: homepage
+descriptorVersion: v5
+name: da_test
+parentName: global:homepage
 titles:
-  en: Digital assistant
+  en: Digital Assistant
   it: Assistente digitale
 pageModel: ad_template
 ownerGroup: free
@@ -11,6 +12,7 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - code: param_va
-    config: null
+  - name: param_va
+    config:
+      navSpec: ARARAH
     pos: 0

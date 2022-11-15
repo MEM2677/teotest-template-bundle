@@ -12,7 +12,7 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - name: param_va-f9005730
+  - name: param_va
     config:
-      navSpec: ARARAH
+      key: ARARAH
     pos: 0

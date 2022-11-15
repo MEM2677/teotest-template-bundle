@@ -1,5 +1,5 @@
-code: assistente-virtuale-widget
-description: Assistente Virtuale Athlos
+code: assistente-digitale-widget
+description: Assistente Digitale
 bundle-type: system-level-bundle
 components:
   widgets:

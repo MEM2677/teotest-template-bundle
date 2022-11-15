@@ -8,8 +8,8 @@ configuration:
       sketch:
         x1: 0
         y1: 0
-        x2: 1
-        y2: 0
+        x2: 11
+        y2: 3
 template: |-
   <#assign wp=JspTaglibs["/aps-core"]>
   <@wp.info key="systemParam" paramName="applicationBaseURL" var="appUrl" />

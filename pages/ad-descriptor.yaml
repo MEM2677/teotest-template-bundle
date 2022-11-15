@@ -1,0 +1,16 @@
+code: ad
+parentCode: homepage
+titles:
+  en: Digital assistant
+  it: Assistente digitale
+pageModel: ad_template
+ownerGroup: free
+joinGroups: []
+displayedInMenu: true
+seo: false
+charset: utf-8
+status: published
+widgets:
+  - code: param_va
+    config: null
+    pos: 0

@@ -1,0 +1,6 @@
+code: ad_inclusion_header
+guiCode: |-
+  <#assign wp=JspTaglibs["/aps-core"]>
+
+  <!-- Inclusions for this template-->
+  <script nonce="<@wp.cspNonce />" src="<@wp.resourceURL />ad/js/jquery-3.3.1.min.js"></script>

@@ -4,4 +4,11 @@ bundle-type: system-level-bundle
 components:
   widgets:
     - widgets/param-virtual-assistant-descriptor.yaml
-
+  pageModels:
+  - pageModels/ad_template-descriptor.yaml
+  pages:
+  - pages/ad-descriptor.yaml
+  fragments:
+  - fragments/ad_inclusion_header-descriptor.yaml
+  labels:
+    - labels/labels-descriptor.yaml

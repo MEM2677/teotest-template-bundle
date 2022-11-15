@@ -1,0 +1,35 @@
+code: sbdemo_template
+description: Template Bootstrap sb2
+configuration:
+  frames:
+    - pos: 0
+      description: Sidebar brand frame 0
+      mainFrame: false
+      sketch:
+        x1: 0
+        y1: 0
+        x2: 1
+        y2: 0
+template: |-
+  <#assign wp=JspTaglibs["/aps-core"]>
+  <@wp.info key="systemParam" paramName="applicationBaseURL" var="appUrl" />
+  <html>
+     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="DM" content="entando">
+        <title>
+           <@wp.i18n key="ASSISTENTE_DIGITALE" /> - <@wp.currentPage param="title" />
+        </title>
+        <!-- Header inclusion-->
+        <@wp.fragment code="ad_inclusion_header" escapeXml=false />
+        <!-- Header inclusion END-->
+     </head>
+     <body>
+  <h1><@wp.currentPage param="title" /></h1>
+  <a href="<@wp.url page="homepage" />" >Home</a><br>
+  <div><@wp.show frame=0 /></div>
+  </body>
+  </html>

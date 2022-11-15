@@ -46,7 +46,7 @@ customUi: |-
   document.body.classList.add('touch')
   }
   
-  // Toogle class mobile nav
+  // Toggle class mobile nav
   const elements = document.querySelectorAll('.menu-item-has-children');
   elements.forEach(function(el, index){
   el.onclick = function() {

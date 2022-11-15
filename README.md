@@ -1,20 +1,27 @@
 # Digital Assistant
 
-This bundle enables the Digital Assistant AIKA provided by Athlos 
+This bundle enables the Digital Assistant AIKA provided by Athlos.
 
 ## Introduction
 
-This bundle installs a server side rendered widget called `Virtual Assistant` to your Entando instance,
-in a demo page called `Digital Assistant`.
+This bundle installs a server side rendered widget called `Digital Assistant` to your Entando instance,
+in a page called `Digital Assistant` (code: `da_test`).  
+This page uses a new page template `Digital Assistant template` which, in turn, brings JQuery 3.3.1 (at the time of writing, the default JS needed for the widget to work).
 
 ### Widget configuration 
 
-When the widget is installed in a frame the system asks for a key given by Athlos when a subscription is made.
-It's possible to save the form leaving the key blank, in this case the default assistant, with limited functionalities, will be used.
+When the widget is dropped in frame, the system asks for a key given by Athlos; the widget installed by the bundle
+is already configured with a default key so please leave it unchanged.
+
+__NOTE:__ the default assistant has a very limited set of skill.
 
 ## Prerequisites
 
- - CSP setup
+ The only prerequisite is the customization of the CSP.  This is needed because the Digital Assistant widget connects and load resources from an external
+server and so Entando has no way to know in advance which are the possible permission for inline script execution.
+
+__NOTE:__ the CSP policy shown below is just an example and are subject to change without notice. 
+
 
 ## CSP customization
  

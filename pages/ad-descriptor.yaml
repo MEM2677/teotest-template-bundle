@@ -1,5 +1,6 @@
+descriptorVersion: v5
 code: ad
-parentCode: homepage
+parentName: global:my_homepage
 titles:
   en: Digital assistant
   it: Assistente digitale
@@ -11,6 +12,7 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - code: da_param-f9005730
-    config: null
+  - code: da_param
+    config:
+      key: aHR0cHM6Ly9zZGthdGhsb3MuaXQvYXZhdGFyL2ZyZWVkZW1vL2pzX3dvcmRwcmVzcy9zZGtfbWFpbi5qcw==
     pos: 0

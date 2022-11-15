@@ -11,6 +11,6 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - code: da_param
+  - code: da_param-f9005730
     config: null
     pos: 0

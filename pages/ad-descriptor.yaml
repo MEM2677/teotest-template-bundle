@@ -11,6 +11,6 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - code: param_va
+  - code: param-va
     config: null
     pos: 0

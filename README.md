@@ -14,7 +14,7 @@ It's possible to save the form leaving the key blank, in this case the default a
 
 ## Prerequisites
 
- - Entando 7.0+ instance with JQuery 3.3.1
+ - Entando 7.1.1+ instance with JQuery 3.3.1
  - CSP setup
 
 ## CSP customization

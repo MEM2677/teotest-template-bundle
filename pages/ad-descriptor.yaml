@@ -1,6 +1,6 @@
 descriptorVersion: v5
 code: ad_demo
-parentName: global:my_homepage
+parentName: global:homepage
 titles:
   en: Digital assistant
   it: Assistente digitale

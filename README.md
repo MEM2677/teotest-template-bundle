@@ -4,8 +4,8 @@ This bundle enables the Digital Assistant AIKA provided by Athlos
 
 ## Introduction
 
-This bundle installs a server side rendered widget called `Virtual Assistant` to your Entando instance.
-This widget directly communicate with Athlos server for execution.
+This bundle installs a server side rendered widget called `Virtual Assistant` to your Entando instance,
+in a demo page called `Digital Assistant`
 
 ### Widget configuration 
 

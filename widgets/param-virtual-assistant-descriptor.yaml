@@ -1,9 +1,9 @@
 descriptorVersion: v5
-name: da_param
+name: param_va
 type: widget
 titles:
-  en: Digital Assistant
-  it: Assistente Digital
+  en: Virtual Assistant
+  it: Assistente Virtuale
 group: free
 customUi: |-
   <#assign wp=JspTaglibs["/aps-core"]>

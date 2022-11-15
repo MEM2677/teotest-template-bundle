@@ -1,8 +1,8 @@
 descriptorVersion: v5
-code: ad_demo
+name: da_test
 parentName: global:homepage
 titles:
-  en: Digital assistant
+  en: Digital Assistant
   it: Assistente digitale
 pageModel: ad_template
 ownerGroup: free
@@ -12,7 +12,7 @@ seo: false
 charset: utf-8
 status: published
 widgets:
-  - code: da_param
+  - name: param_va
     config:
       key: aHR0cHM6Ly9zZGthdGhsb3MuaXQvYXZhdGFyL2ZyZWVkZW1vL2pzX3dvcmRwcmVzcy9zZGtfbWFpbi5qcw==
     pos: 0

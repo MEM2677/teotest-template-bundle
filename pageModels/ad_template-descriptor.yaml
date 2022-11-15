@@ -1,5 +1,5 @@
 code: ad_template
-description: Template for Digital assistant
+description: Digital Assistant template
 configuration:
   frames:
     - pos: 0

@@ -4,8 +4,16 @@ This bundle enables the Digital Assistant AIKA provided by Athlos
 
 ## Introduction
 
+<<<<<<< Updated upstream
+This bundle installs a server side rendered widget called `Virtual Assistant` to your Entando instance.
+This widget directly communicate with Athlos server for execution.
+=======
 This bundle installs a server side rendered widget called `Virtual Assistant` to your Entando instance,
 in a demo page called `Digital Assistant`.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 ### Widget configuration 
 
@@ -14,7 +22,7 @@ It's possible to save the form leaving the key blank, in this case the default a
 
 ## Prerequisites
 
- - Entando 7.1.1+ instance with JQuery 3.3.1
+ - Entando 7.0+ instance with JQuery 3.3.1
  - CSP setup
 
 ## CSP customization

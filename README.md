@@ -34,16 +34,16 @@ __NOTE:__ the CSP policy shown below is very permissive to accomodate most brows
  - edit the deployment
  ``ent k edit deploy xxyyzz-deployment``  
 
-- add the snipped below in the bottom of the list of the environment variables found in the deployment
+   - add the snipped below in the bottom of the list of the environment variables found in the deployment
 
-   ```text
-   - name: CSP_HEADER_ENABLED
-     value: "true"
-   - name: CSP_HEADER_EXTRACONFIG
-     value: ' ''strict-dynamic''; object-src ''none''; base-uri ''none''; script-src-attr
-     ''self'' ''unsafe-hashes'' ''unsafe-inline''; script-src-elm ''self''
-    ''unsafe-inline'' ''unsafe-eval'' '
-   ```
+      ```text
+           - name: CSP_HEADER_ENABLED
+             value: "true"
+           - name: CSP_HEADER_EXTRACONFIG
+             value: ' ''strict-dynamic'' https: ''self'' ; object-src ''none''; base-uri
+               ''self''; script-src-attr  ''self'' ''unsafe-hashes'' ''unsafe-inline'';
+               script-src-elm ''self''  ''unsafe-inline'' ''unsafe-eval'' '
+      ```
 
 - Restart the deploy  
 ``ent k scale deploy xxyyzz-deployment --replicas=1``

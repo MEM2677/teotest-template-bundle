@@ -1,5 +1,5 @@
 code: assistente-digitale-widget
-description: Assistente Digitale
+description: AIKA Digital Assistant
 bundle-type: system-level-bundle
 components:
   widgets:

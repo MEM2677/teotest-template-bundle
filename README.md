@@ -20,7 +20,7 @@ __NOTE:__ the default assistant has a very limited functionality.
  The only prerequisite is the customization of the CSP.  This is needed because the Digital Assistant widget connects and loads resources from an external
 server and so Entando has no way to know in advance which domains are to be allowed for script execution.
 
-__NOTE:__ the CSP policy shown below is very permissive to accomodate most browsers and thus not suitable for production. 
+__NOTE:__ the CSP policy shown below is very permissive to accommodate most browsers and is just an example, thus not suitable for production. 
 
 
 ## CSP customization
@@ -34,16 +34,15 @@ __NOTE:__ the CSP policy shown below is very permissive to accomodate most brows
  - edit the deployment
  ``ent k edit deploy xxyyzz-deployment``  
 
-   - add the snipped below in the bottom of the list of the environment variables found in the deployment
-
-      ```text
-           - name: CSP_HEADER_ENABLED
-             value: "true"
-           - name: CSP_HEADER_EXTRACONFIG
-             value: ' ''strict-dynamic'' https: ''self'' ; object-src ''none''; base-uri
-               ''self''; script-src-attr  ''self'' ''unsafe-hashes'' ''unsafe-inline'';
-               script-src-elm ''self''  ''unsafe-inline'' ''unsafe-eval'' '
-      ```
+ - add the snipped below in the bottom of the list of the environment variables found in the deployment
+  ```text
+      - name: CSP_HEADER_ENABLED
+        value: "true"
+      - name: CSP_HEADER_EXTRACONFIG
+        value: ' ''strict-dynamic'' https: ''self'' ; object-src ''none''; base-uri
+          ''self''; script-src-attr  ''self'' ''unsafe-hashes'' ''unsafe-inline'';
+          script-src-elm ''self''  ''unsafe-inline'' ''unsafe-eval'' '
+  ```
 
 - Restart the deploy  
 ``ent k scale deploy xxyyzz-deployment --replicas=1``
